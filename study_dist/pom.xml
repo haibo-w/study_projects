@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.test.study</groupId>
+		<artifactId>study-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>study_dist</artifactId>
+	<name>study_dist</name>
+	<packaging>pom</packaging>
+	<url>http://maven.apache.org</url>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.6</version>
+				<executions>
+					<execution>
+						<id>assemble</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<appendAssemblyId>false</appendAssemblyId>
+							<finalName>${final.version}</finalName>
+							<descriptors>
+								<descriptor>src/main/assembly/assembly.xml</descriptor>
+							</descriptors>
+							<tarLongFileMode>gnu</tarLongFileMode>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
+			<plugin>
+	              <groupId>org.codehaus.mojo</groupId>
+	              <artifactId>build-helper-maven-plugin</artifactId>
+	              <version>1.9.1</version>
+	              <executions>
+	               	   <execution>
+	                      <id>timestamp-property</id>
+	                      <goals>
+	                          <goal>timestamp-property</goal>
+	                      </goals>
+	                      <configuration>
+	                          <name>shortDateByLine</name>
+	                          <pattern>yyyy-MM-dd</pattern>
+	                          <timeZone>GMT+8</timeZone>
+	                      </configuration>
+	                  </execution>
+	                  
+	                  <execution>
+	                      <id>timestamp-property2</id>
+	                      <goals>
+	                          <goal>timestamp-property</goal>
+	                      </goals>
+	                      <configuration>
+	                          <name>expireDate</name>
+	                          <pattern>yyyy-MM-dd</pattern>
+	                          <unit>year</unit>
+              				  <offset>+2</offset>
+	                          <timeZone>GMT+8</timeZone>
+	                      </configuration>
+	                  </execution>
+	                  
+	                  <execution>
+	                      <id>timestamp-property3</id>
+	                      <goals>
+	                          <goal>timestamp-property</goal>
+	                      </goals>
+	                      <configuration>
+	                          <name>oozieStartDate</name>
+	                          <pattern>yyyy-MM-dd</pattern>
+	                          <unit>day</unit>
+              				  <offset>+1</offset>
+	                          <timeZone>GMT+8</timeZone>
+	                      </configuration>
+	                  </execution>
+	              </executions>
+	          </plugin>
+
+		</plugins>
+	</build>
+	
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
