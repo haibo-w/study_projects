@@ -1,0 +1,15 @@
+11:41:02.711 |-INFO  c.p.r.s.SearchChatFileThread/105 - ==>初始化容器<==
+11:41:03.462 |-INFO  c.p.r.s.TMFileTools/158 - =>readLastLine:201405060000
+11:41:03.462 |-INFO  c.p.r.s.SearchChatFileThread/54 - =>检测到存在历史完成文件，获取最后处理时间：201405060000
+11:41:03.468 |-INFO  c.p.r.s.SearchChatFileThread/68 - ==>启动转换操作<==
+11:41:03.468 |-INFO  c.p.r.s.SearchChatFileThread/88 - ==>所有转换操作完毕<==
+11:41:49.147 |-INFO  c.p.r.s.SearchChatFileThread/105 - ==>初始化容器<==
+11:41:49.810 |-INFO  c.p.r.s.TMFileTools/158 - =>readLastLine:201405060000
+11:41:49.810 |-INFO  c.p.r.s.SearchChatFileThread/54 - =>检测到存在历史完成文件，获取最后处理时间：201405060000
+11:41:49.815 |-INFO  c.p.r.s.SearchChatFileThread/68 - ==>启动转换操作<==
+11:41:49.815 |-INFO  c.p.r.s.SearchChatFileThread/88 - ==>所有转换操作完毕<==
+11:41:56.836 |-INFO  c.p.r.s.SearchChatFileThread/105 - ==>初始化容器<==
+11:41:57.455 |-INFO  c.p.r.s.TMFileTools/158 - =>readLastLine:201405060000
+11:41:57.455 |-INFO  c.p.r.s.SearchChatFileThread/54 - =>检测到存在历史完成文件，获取最后处理时间：201405060000
+11:41:57.460 |-INFO  c.p.r.s.SearchChatFileThread/68 - ==>启动转换操作<==
+11:41:57.460 |-INFO  c.p.r.s.SearchChatFileThread/88 - ==>所有转换操作完毕<==

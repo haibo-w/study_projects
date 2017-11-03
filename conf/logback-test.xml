@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%d{HH:mm:ss.SSS} |-%-5level [%thread] %logger{35}/%L - %msg%n</pattern>
+		</layout>
+	</appender>
+	
+	<logger name="com" level="debug">
+	    <appender-ref ref="STDOUT" />
+	</logger>
+	<logger name="org.springframework" level="INFO">
+		<appender-ref ref="STDOUT"/>
+	</logger>
+</configuration>
