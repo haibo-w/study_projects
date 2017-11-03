@@ -298,7 +298,7 @@
 			<dependency>
 				<groupId>commons-io</groupId>
 				<artifactId>commons-io</artifactId>
-				<version>1.4</version>
+				<version>2.4</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-collections</groupId>
@@ -447,6 +447,10 @@
 		<module>study_dist</module>
 		<module>study_baidugis</module>
 		<module>study_java8</module>
+		
+		<module>study_kafka</module>
+		<module>study_hbase</module>
+		<module>study_groovy</module>
 	</modules>
 
 </project>
