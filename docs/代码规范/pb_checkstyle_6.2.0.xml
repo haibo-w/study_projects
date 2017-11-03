@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<!-- This configuration file was written by the eclipse-cs plugin configuration 
+	editor -->
+<!-- Checkstyle-Configuration: Pb_CheckStyle_by_sun Description: none -->
+<module name="Checker">
+	<property name="severity" value="error" />
+	<module name="TreeWalker">
+		<module name="FileContentsHolder">
+			<module name="JavadocMethod">
+				<property name="severity" value="warning" />
+				<property name="allowThrowsTagsForSubclasses" value="true" />
+				<property name="allowMissingReturnTag" value="true" />
+				<property name="allowMissingPropertyJavadoc" value="true" />
+				<property name="suppressLoadErrors" value="true" />
+				<message key="javadoc.missing" value="缺失文档注释." />
+				<message key="javadoc.expectedTag" value="在 {0} tag 处为参数 ''{1}'' 做出说明 ." />
+				<message key="javadoc.return.expected" value="请为返回值做出说明 @return tag." />
+			</module>
+			<module name="JavadocType" />
+			<module name="JavadocStyle">
+				<property name="checkFirstSentence" value="false" />
+			</module>
+			<module name="ConstantName" />
+			<module name="LocalFinalVariableName" />
+			<module name="LocalVariableName" />
+			<module name="MemberName">
+				<property name="format" value="^[a-z][a-zA-Z0-9]*$|^[a-z]*_[a-zA-Z0-9]*$" />
+			</module>
+			<module name="MethodName" />
+			<module name="PackageName" />
+			<module name="ParameterName" />
+			<module name="StaticVariableName" />
+			<module name="TypeName" />
+			<module name="AvoidStarImport" />
+			<module name="IllegalImport" />
+			<module name="RedundantImport" />
+			<module name="UnusedImports" />
+			<module name="LineLength">
+				<property name="max" value="120" />
+				<property name="tabWidth" value="4" />
+			</module>
+			<module name="MethodLength" />
+			<module name="ParameterNumber" />
+			<module name="EmptyForIteratorPad" />
+			<module name="GenericWhitespace" />
+			<module name="MethodParamPad" />
+			<module name="NoWhitespaceAfter">
+				<property name="tokens" value="BNOT,DEC,DOT,INC,LNOT,UNARY_MINUS,TYPECAST" />
+			</module>
+			<module name="NoWhitespaceBefore" />
+			<module name="OperatorWrap" />
+			<module name="ParenPad" />
+			<module name="TypecastParenPad" />
+			<module name="WhitespaceAfter">
+				<property name="tokens" value="COMMA,TYPECAST" />
+			</module>
+			<module name="WhitespaceAround" />
+			<module name="ModifierOrder">
+				<message key="mod.order" value="''{0}'' 修饰符顺序不符合 JLS 建议." />
+			</module>
+			<module name="RedundantModifier" />
+			<module name="AvoidNestedBlocks" />
+			<module name="EmptyBlock" />
+			<module name="LeftCurly" />
+			<module name="NeedBraces">
+				<property name="tokens" value="LITERAL_DO,LITERAL_ELSE,LITERAL_FOR,LITERAL_WHILE" />
+				<message key="needBraces" value="''{0}''  语句必须使用 '''{}'''s." />
+			</module>
+			<module name="RightCurly" />
+			<module name="EmptyStatement" />
+			<module name="EqualsHashCode" />
+			<module name="HiddenField">
+				<property name="ignoreConstructorParameter" value="true" />
+				<property name="ignoreSetter" value="true" />
+				<message key="hidden.field" value="''{0}'' hides a field. 注意 &quot;{0}&quot; 文件内部已有该名称" />
+			</module>
+			<module name="IllegalInstantiation" />
+			<module name="InnerAssignment" />
+			<module name="MissingSwitchDefault" />
+			<module name="RedundantThrows">
+				<property name="suppressLoadErrors" value="true" />
+			</module>
+			<module name="SimplifyBooleanExpression" />
+			<module name="SimplifyBooleanReturn" />
+			<module name="HideUtilityClassConstructor" />
+			<module name="InterfaceIsType" />
+			<module name="ArrayTypeStyle" />
+			<module name="TodoComment" />
+			<module name="UpperEll" />
+			<module name="MagicNumber">
+				<property name="tokens" value="NUM_DOUBLE,NUM_FLOAT" />
+			</module>
+			<module name="NestedIfDepth">
+				<property name="max" value="3" />
+			</module>
+			<module name="NestedTryDepth">
+				<property name="max" value="2" />
+			</module>
+			<module name="NoFinalizer" />
+			<module name="ParameterAssignment" />
+			<module name="OneStatementPerLine" />
+			<module name="VariableDeclarationUsageDistance" />
+			<module name="EqualsAvoidNull" />
+		</module>
+	</module>
+	<module name="NewlineAtEndOfFile" />
+	<module name="Translation" />
+	<module name="FileLength" />
+</module>
