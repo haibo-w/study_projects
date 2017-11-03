@@ -451,6 +451,7 @@
 		<module>study_kafka</module>
 		<module>study_hbase</module>
 		<module>study_groovy</module>
+		<module>study_utils</module>
 	</modules>
 
 </project>
