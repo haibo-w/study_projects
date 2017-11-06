@@ -88,9 +88,7 @@ public class StreamTest {
 				max().
 				getAsInt();
 		System.out.println(" open max size:"+asInt);
-		
-		
-		
+
 	}
 
 	@Test
@@ -100,7 +98,7 @@ public class StreamTest {
 		OptionalInt max = IntStream.of(intArr).max();
 		max.ifPresent(v -> System.out.println(v));
 
-		// List<int[]> asList = Arrays.asList(intArr); // mark ���������ǲ�����Ϊ���͵Ĳ���
+		// List<int[]> asList = Arrays.asList(intArr); 
 		Integer[] intArr2 = new Integer[] { 5, 10, 15, 20, 26, 35, 14, 28, 55, 44, 42, 31, 13, 69, 56 };
 		List<Integer> asList = Arrays.asList(intArr2);
 		asList.stream().sorted().forEach(v -> {
