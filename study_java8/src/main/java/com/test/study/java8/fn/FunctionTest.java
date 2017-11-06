@@ -5,12 +5,16 @@ import java.util.function.Function;
 import junit.framework.Assert;
 
 /**
+ * 
  * @author Haibo-W
  * @date 2016年9月22日 上午11:54:54
  */
 public class FunctionTest {
 
 	public static void main(String[] args) {
+		/**
+		 * Function 接口有一个参数并且返回一个结果，并附带了一些可以和其他函数组合的默认方法（compose, andThen）
+		 */
 		Function<Integer, String> f = new Function<Integer, String>() {
 
 			@Override
